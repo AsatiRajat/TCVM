@@ -1,0 +1,105 @@
+package org.yash.tcvm.models;
+
+public class MaterialContainer {
+	private int teaCapacity;
+	private int coffeeCapacity;
+	private int sugarCapacity;
+	private int waterCapacity;
+	private int milkCapacity;
+
+	public MaterialContainer() {
+		super();
+		intializedContainer();
+	}
+
+	public int getTeaCapacity() {
+		return teaCapacity;
+	}
+
+	public void setTeaCapacity(int teaCapacity) {
+		this.teaCapacity = teaCapacity;
+	}
+
+	public int getCoffeeCapacity() {
+		return coffeeCapacity;
+	}
+
+	public void setCoffeeCapacity(int coffeeCapacity) {
+		this.coffeeCapacity = coffeeCapacity;
+	}
+
+	public int getSugarCapacity() {
+		return sugarCapacity;
+	}
+
+	public void setSugarCapacity(int sugarCapacity) {
+		this.sugarCapacity = sugarCapacity;
+	}
+
+	public int getWaterCapacity() {
+		return waterCapacity;
+	}
+
+	public void setWaterCapacity(int waterCapacity) {
+		this.waterCapacity = waterCapacity;
+	}
+
+	public int getMilkCapacity() {
+		return milkCapacity;
+	}
+
+	public void setMilkCapacity(int milkCapacity) {
+		this.milkCapacity = milkCapacity;
+	}
+
+	public void intializedContainer() {
+		teaCapacity = 2000;
+		coffeeCapacity = 2000;
+		sugarCapacity = 8000;
+		waterCapacity = 15000;
+		milkCapacity = 10000;
+	}
+
+}
+
+
+
+				// System.out.println("Please select any below options for
+				// buying Drinks.");
+				// System.out.println("1. Tea");
+				// System.out.println("2. Black Tea");
+				// System.out.println("3. Coffee");
+				// System.out.println("4. Black Coffee");
+				// System.out.println("5. Refill Container");
+				// System.out.println("6. Check Total Sale");
+				// System.out.println("7. Container Status");
+				// System.out.println("8. Reset Container");
+				// System.out.println("9. Exit TCVM");
+				// logger.info("*******************************************************");
+				
+				
+
+				coffee
+				coffee-5000
+				water - 12000
+				milk - 45000
+				
+				blacktea
+				tea -2500
+				water -57000
+				
+				blackcofffee
+				coffee -2500
+				water-57000
+				
+	public static final int TEA_CUNSUMPTION = 5;
+	public static final int WATER_CUNSUMPTION = 60;
+	public static final int MILK_CUNSUMPTION = 40;
+	public static final int SUGAR_CUNSUMPTION = 15;
+
+	public static final int TEA_WASTE = 5;
+	public static final int WATER_WASTE = 5;
+	public static final int MILK_WASTE = 5;
+	public static final int SUGAR_WASTE = 5;
+	
+	
