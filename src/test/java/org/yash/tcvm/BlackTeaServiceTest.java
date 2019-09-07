@@ -19,7 +19,7 @@ public class BlackTeaServiceTest {
 	public void shouldReturnTrueWhenTeaCapacityIsSufficientInContainer() {
 		containerManager.intializedContainer();
 		assertEquals(true,
-				containerManager.getTeaCapacity() >= BlackTea.BLACK_TEA.getConsumptionAndWasteMaterialTotal() * 1);
+				containerManager.getTeaCapacity() >= BlackTea.TEA.getConsumptionAndWasteMaterialTotal() * 1);
 		assertEquals(true, blackTeaService.isMaterialSufficient(1));
 	}
 
@@ -27,7 +27,7 @@ public class BlackTeaServiceTest {
 	public void shouldReturnFalseWhenTeaCapacityIsSufficientInContainer() {
 		containerManager.intializedContainer();
 		assertEquals(false,
-				containerManager.getTeaCapacity() >= BlackTea.BLACK_TEA.getConsumptionAndWasteMaterialTotal() * 1000);
+				containerManager.getTeaCapacity() >= BlackTea.TEA.getConsumptionAndWasteMaterialTotal() * 1000);
 		assertEquals(false, blackTeaService.isMaterialSufficient(1000));
 	}
 

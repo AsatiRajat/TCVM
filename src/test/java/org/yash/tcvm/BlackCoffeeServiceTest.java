@@ -19,7 +19,7 @@ public class BlackCoffeeServiceTest {
 	public void shouldReturnTrueWhenCoffeeCapacityIsSufficientInContainer() {
 		containerManager.intializedContainer();
 		assertEquals(true, containerManager
-				.getCoffeeCapacity() >= BlackCoffee.BLACK_COFFEE.getConsumptionAndWasteMaterialTotal() * 1);
+				.getCoffeeCapacity() >= BlackCoffee.COFFEE.getConsumptionAndWasteMaterialTotal() * 1);
 		assertEquals(true, blackCoffeeService.isMaterialSufficient(1));
 	}
 
@@ -27,7 +27,7 @@ public class BlackCoffeeServiceTest {
 	public void shouldReturnFalseWhenCoffeeCapacityIsSufficientInContainer() {
 		containerManager.intializedContainer();
 		assertEquals(false, containerManager
-				.getCoffeeCapacity() >= BlackCoffee.BLACK_COFFEE.getConsumptionAndWasteMaterialTotal() * 1000);
+				.getCoffeeCapacity() >= BlackCoffee.COFFEE.getConsumptionAndWasteMaterialTotal() * 1000);
 		assertEquals(false, blackCoffeeService.isMaterialSufficient(1000));
 	}
 

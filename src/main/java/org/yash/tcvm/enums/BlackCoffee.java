@@ -1,7 +1,7 @@
 package org.yash.tcvm.enums;
 
 public enum BlackCoffee {
-	BLACK_COFFEE(3, 0), SUGAR(15, 2), WATER(100, 12);
+	COFFEE(3, 0), SUGAR(15, 2), WATER(100, 12);
 
 	private final Integer consumption;
 	private final Integer waste;

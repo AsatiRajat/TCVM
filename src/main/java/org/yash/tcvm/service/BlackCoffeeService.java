@@ -21,7 +21,7 @@ public class BlackCoffeeService implements DrinkService {
 		if (isMaterialSufficient(quantity)) {
 
 			containerManager.setCoffeeCapacity(containerManager.getCoffeeCapacity()
-					- BlackCoffee.BLACK_COFFEE.getConsumptionAndWasteMaterialTotal() * quantity);
+					- BlackCoffee.COFFEE.getConsumptionAndWasteMaterialTotal() * quantity);
 			containerManager.setSugarCapacity(containerManager.getSugarCapacity()
 					- BlackCoffee.SUGAR.getConsumptionAndWasteMaterialTotal() * quantity);
 			containerManager.setWaterCapacity(containerManager.getWaterCapacity()
@@ -41,7 +41,7 @@ public class BlackCoffeeService implements DrinkService {
 	public boolean isMaterialSufficient(Integer quantity) {
 
 		IntPredicate hasCoffee = (q) -> containerManager
-				.getCoffeeCapacity() >= BlackCoffee.BLACK_COFFEE.getConsumptionAndWasteMaterialTotal() * q;
+				.getCoffeeCapacity() >= BlackCoffee.COFFEE.getConsumptionAndWasteMaterialTotal() * q;
 		IntPredicate hasWater = (
 				q) -> containerManager.getWaterCapacity() >= BlackCoffee.WATER.getConsumptionAndWasteMaterialTotal() * q;
 		IntPredicate hasSugar = (
