@@ -8,6 +8,7 @@ import org.yash.tcvm.enums.BlackTea;
 import org.yash.tcvm.enums.DrinksType;
 import org.yash.tcvm.exception.MaterialNotSufficientException;
 import org.yash.tcvm.service.BlackTeaService;
+import org.yash.tcvm.utils.VendingMachineUtils;
 
 public class BlackTeaServiceTest {
 
@@ -75,6 +76,7 @@ public class BlackTeaServiceTest {
 	@Test
 	public void shouldReturnTrueWhenMaterialIsAvailable() {
 		blackTeaService.makeDrink(DrinksType.BLACK_TEA.name(), 5);
+		VendingMachineUtils.drinksSales(DrinksType.BLACK_TEA.name(), 5);
 		assertEquals(true, blackTeaService.isMaterialSufficient(5));
 	}
 
@@ -82,5 +84,29 @@ public class BlackTeaServiceTest {
 	public void shouldThrowExceptionIfMaterialIsNotAvailable() {
 		blackTeaService.makeDrink(DrinksType.BLACK_TEA.name(), 500);
 	}
+	
+	
 
 }
+
+
+//package org.yash.tcvm;
+//
+//import org.junit.Test;
+//import org.mockito.InjectMocks;
+//import org.yash.tcvm.enums.DrinksType;
+//import org.yash.tcvm.utils.VendingMachineUtils;
+//
+//public class VendingMachineUtilsTest {
+//
+//	@InjectMocks
+//	VendingMachineUtils vendingMachineUtils;
+//	
+//	@Test
+//	public void test() {
+//		
+//		
+//		
+//	}
+//
+//}

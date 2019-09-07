@@ -8,6 +8,7 @@ import org.yash.tcvm.enums.BlackCoffee;
 import org.yash.tcvm.enums.DrinksType;
 import org.yash.tcvm.exception.MaterialNotSufficientException;
 import org.yash.tcvm.service.BlackCoffeeService;
+import org.yash.tcvm.utils.VendingMachineUtils;
 
 public class BlackCoffeeServiceTest {
 
@@ -75,6 +76,7 @@ public class BlackCoffeeServiceTest {
 	@Test
 	public void shouldReturnTrueWhenMaterialIsAvailable() {
 		blackCoffeeService.makeDrink(DrinksType.BLACK_COFFEE.name(), 5);
+		VendingMachineUtils.drinksSales(DrinksType.BLACK_COFFEE.name(), 5);
 		assertEquals(true, blackCoffeeService.isMaterialSufficient(5));
 	}
 

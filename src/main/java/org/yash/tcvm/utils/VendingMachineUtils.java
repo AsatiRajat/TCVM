@@ -16,15 +16,4 @@ public class VendingMachineUtils {
 		}
 	}
 
-	// public static void calculateWastageMaterial(String drinkType, Integer
-	// quantity) {
-	//
-	// if (vendingMachine.getDrinkSaleReportMap().containsKey(drinkType))
-	// vendingMachine.getDrinkSaleReportMap().put(drinkType,
-	// vendingMachine.getDrinkSaleReportMap().get(drinkType) + quantity);
-	// else
-	// vendingMachine.getDrinkSaleReportMap().put(drinkType, quantity);
-	//
-	// }
-
 }
